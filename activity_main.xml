@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#01161E"
+    android:backgroundTint="#AEC3B0"
+    android:backgroundTintMode="multiply"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">  <!--every item inside the layout is now centred-->
+
+
+    <TextView
+        style="@style/Widget.Material3.MaterialTimePicker.Display.HelperText"
+        android:layout_width="229dp"
+        android:layout_height="wrap_content"
+        android:text="CALCULATE \u0020 \u0020 \u0020 \u0020 YOUR"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#AC0909"
+        android:textSize="35sp"
+        android:textStyle="italic|bold" />
+
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:background="#00BD97"
+        android:padding="10dp"
+        android:paddingBottom="5dp"
+
+        android:text="    AGE     "
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#01161E"
+        android:textColorHighlight="#AC0909"
+        android:textSize="35sp"
+        android:textStyle="italic|bold" />
+
+    <TextView
+        style="@style/Widget.Material3.MaterialTimePicker.Display.HelperText"
+        android:layout_width="229dp"
+        android:layout_height="wrap_content"
+
+
+        android:text="IN MINUTES"
+        android:layout_marginBottom="30dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#AC0909"
+        android:textSize="35sp"
+        android:textStyle="italic|bold" />
+
+    <Button
+        android:id="@+id/btnDatePicker"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:backgroundTint="#85FEFEFF"
+        android:text="Select Date"
+        android:textColor="#706E6E" />
+
+    <TextView
+        android:id="@+id/tvSelectedDate"
+        style="@style/Widget.Material3.MaterialTimePicker.Display.HelperText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="11dp"
+        android:background="#83C4E8"
+        android:padding="5dp"
+        android:text="01.11.2002"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#020F23"
+        android:textColorHighlight="#3E3D3D"
+        android:textSize="23sp"
+        android:textStyle="italic" />
+
+    <TextView
+        style="@style/Widget.Material3.MaterialTimePicker.Display.HelperText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selected Date"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#AC0909"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/tvAgeInMinutes"
+        style="@style/Widget.Material3.MaterialTimePicker.Display.HelperText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="11dp"
+        android:background="#0F96DF"
+        android:padding="5dp"
+        android:text="14000000000"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#020F23"
+        android:textColorHighlight="#3E3D3D"
+        android:textSize="35sp"
+        android:textStyle="italic" />
+
+    <TextView
+        style="@style/Widget.Material3.MaterialTimePicker.Display.HelperText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Minutes you survived!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#AC0909"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+
+</LinearLayout>
