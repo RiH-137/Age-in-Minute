@@ -15,7 +15,7 @@ import java.util.Locale
 class MainActivity : AppCompatActivity() {
 
     private var tvSelectedDate : TextView? = null    //creating private variable for selected date
-    private var tvAgeInMinutes : TextView?= null
+    private var tvAgeInMinutes : TextView?= null     //creating private
 
 
 
@@ -36,6 +36,8 @@ class MainActivity : AppCompatActivity() {
 
 
     }
+    
+    
     fun clickDatePicker(){                             // on clicking the button
 
         val myCalendar= Calendar.getInstance()
@@ -56,13 +58,15 @@ class MainActivity : AppCompatActivity() {
             tvSelectedDate?.text = selectedDate
 
             val sdf=SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH)
+            
+            
             val theDate =sdf.parse(selectedDate)
-
             val selectedDateInMinutes=theDate.time/60000       //in order to convert
+            
 
             val currentDate=sdf.parse(sdf.format(System.currentTimeMillis()))
-
             val currentDateInMinutes=currentDate.time/60000
+            
 
             val differenceInMinutes= currentDateInMinutes - selectedDateInMinutes
 
